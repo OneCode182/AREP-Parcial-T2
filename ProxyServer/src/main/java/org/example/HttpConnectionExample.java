@@ -15,8 +15,8 @@ import java.net.URL;
 public class HttpConnectionExample {
 
     private final String USER_AGENT = "Mozilla/5.0";
-    private final String SERVICE_EC2_N1 = "http://ec2-100-28-225-246.compute-1.amazonaws.com:8080";
-    private final String SERVICE_EC2_N2 = "";
+    private final String SERVICE_EC2_N1 = "http://ec2-3-230-159-13.compute-1.amazonaws.com:8080";
+    private final String SERVICE_EC2_N2 = "http://ec2-54-235-238-59.compute-1.amazonaws.com:8080";
 
 
     private final String baseService1 = "/linearsearch";
