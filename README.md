@@ -1,9 +1,13 @@
 
 # AREP Parcial T2
 
-> [!INFO]
+> [!NOTE]
 > Student: Sergio Andrey Silva Rodriguez
+>
 > AREP 3 - 301 Group
+
+
+https://github.com/user-attachments/assets/b1903751-7064-4282-acb9-c8c143235338
 
 ![img](./img/diagram.png)
 
