@@ -12,9 +12,26 @@ public class HttpConnectionExample {
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final String GET_URL = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=fb&apikey=Q1QZFVJQ21K7C6XM";
 
+    private static final String SERVICE_LINEAR_SEARCH = "http://ec2-100-28-225-246.compute-1.amazonaws.com:8080/linearsearch?list=10,70,80,2&value=80";
+
     public static void main(String[] args) throws IOException {
 
-        URL obj = new URL(GET_URL);
+
+        try {
+            System.out.println("SERVER 1: LINEAR SEARCH");
+            StringBuffer respService1 = request(SERVICE_LINEAR_SEARCH);
+            System.out.println(respService1);
+
+        } catch (Exception e) {
+            System.out.println("ERROR SERVER 1");
+        }
+
+    }
+
+
+    private static StringBuffer request(String serviceUrl) throws IOException {
+
+        URL obj = new URL(serviceUrl);
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", USER_AGENT);
@@ -33,13 +50,17 @@ public class HttpConnectionExample {
                 response.append(inputLine);
             }
             in.close();
-
-            // print result
-            System.out.println(response);
+            return response;
         } else {
             System.out.println("GET request not worked");
         }
         System.out.println("GET DONE");
+
+        return new StringBuffer();
+
     }
+
+
+
 
 }
