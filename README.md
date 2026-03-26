@@ -9,8 +9,9 @@
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 
-
-https://github.com/user-attachments/assets/b1903751-7064-4282-acb9-c8c143235338
+> [!TIP]
+> ### Video demostración
+> [VideoDemo](https://github.com/user-attachments/assets/b1903751-7064-4282-acb9-c8c143235338)
 
 > Sistema de microservicios con proxy y dos servicios backend en Spring Boot para búsqueda lineal y binaria, desplegados en instancias EC2 de AWS.
 
